@@ -17,14 +17,14 @@ include $(CLEAR_VARS)
 
 LOCAL_MODULE := jsr330
 LOCAL_SDK_VERSION := current
-LOCAL_SRC_FILES := $(call all-java-files-under, ri/src/main/java)
+LOCAL_SRC_FILES := $(call all-java-files-under, src)
 
 include $(BUILD_STATIC_JAVA_LIBRARY)
 
 # Also build a host side library
 include $(CLEAR_VARS)
 
-LOCAL_SRC_FILES := $(call all-java-files-under, ri/src/main/java)
+LOCAL_SRC_FILES := $(call all-java-files-under, src)
 
 LOCAL_MODULE := jsr330lib
 
